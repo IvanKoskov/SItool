@@ -1,0 +1,7 @@
+/Users/evan/SItool/build/CMakeFiles/SItool.dir
+/Users/evan/SItool/build/CMakeFiles/edit_cache.dir
+/Users/evan/SItool/build/CMakeFiles/rebuild_cache.dir
+/Users/evan/SItool/build/CMakeFiles/list_install_components.dir
+/Users/evan/SItool/build/CMakeFiles/install.dir
+/Users/evan/SItool/build/CMakeFiles/install/local.dir
+/Users/evan/SItool/build/CMakeFiles/install/strip.dir
