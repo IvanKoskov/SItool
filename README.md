@@ -1,5 +1,6 @@
-##Balance Chemical Equations
+### Balance Chemical Equations
 
+# ONLY SOME ARE DONE< RELEASE SOON
 Input: An unbalanced equation (e.g., H2 + O2 -> H2O).
 Output: A balanced equation (e.g., 2H2 + O2 -> 2H2O).
 Calculate Molar Mass
