@@ -1,0 +1,11 @@
+What is already done?
+
+-help commands
+
+-about info and control
+
+commands
+
+-unit conversion
+
+-display all units

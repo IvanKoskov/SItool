@@ -1,5 +1,6 @@
-CMakeFiles/SItool.dir/src/main.c.o: /Users/evan/SItool/src/main.c \
-  /Users/evan/SItool/src/commandsOptions.h \
+CMakeFiles/SItool.dir/src/main.c.o: \
+  /Users/evan/Documents/GitHub/SItool/src/main.c \
+  /Users/evan/Documents/GitHub/SItool/src/commandsOptions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/sys/cdefs.h \
@@ -42,4 +43,4 @@ CMakeFiles/SItool.dir/src/main.c.o: /Users/evan/SItool/src/main.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/secure/_string.h \
-  /Users/evan/SItool/src/config.h
+  /Users/evan/Documents/GitHub/SItool/src/config.h

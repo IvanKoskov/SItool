@@ -9,19 +9,12 @@
 #define RESET "\033[0m"   
 
 
-
-
-
-
-
-
 // Function to display all units
 void displayUnits(const Unit unit_factors[], int size) {
     for (int i = 0; i < size; i++) {
         printf("%s: %f\n", unit_factors[i].unit, unit_factors[i].factor);
     }
 }
-
 
 
 Unit unit_factors[] = {
@@ -45,6 +38,12 @@ Unit unit_factors[] = {
     {"lb", 0.453592},// pounds
     {"oz", 0.0283495}, // ounces
     {"st", 6.35029},  // stones (UK)
+ 
+     {"mole", 1.0},            // Base unit for amount of substance
+{"molecule", 1.0 / 6.022e23}, // Number of molecules per mole (inverse of Avogadro's number)
+
+
+
     
     // Volume (liters as base unit)
     {"l", 1.0},      // liters
@@ -306,15 +305,15 @@ Unit unit_factors[] = {
     {"uA", 1e-6},        // microamperes
 
     // Volume (liters as base unit)
-    {"l", 1.0},          // liters
-    {"ml", 0.001},       // milliliters
-    {"cl", 0.01},        // centiliters
-    {"dl", 0.1},         // deciliters
-    {"gal", 3.78541},    // gallons
-    {"qt", 0.946353},    // quarts
-    {"pt", 0.473176},    // pints
-    {"oz_fl", 0.0295735},// fluid ounces
-    {"bbl", 158.987},    // barrels (liquid)
+   // {"l", 1.0},          // liters
+   // {"ml", 0.001},       // milliliters
+   // {"cl", 0.01},        // centiliters
+   // {"dl", 0.1},         // deciliters
+   // {"gal", 3.78541},    // gallons
+   // {"qt", 0.946353},    // quarts
+   // {"pt", 0.473176},    // pints
+   // {"oz_fl", 0.0295735},// fluid ounces
+   // {"bbl", 158.987},    // barrels (liquid)
 
     // Electric Potential (volts as base unit)
     {"V", 1.0},          // volt
@@ -329,8 +328,7 @@ Unit unit_factors[] = {
 };
 
 
-
-    int num_units = sizeof(unit_factors) / sizeof(unit_factors[0]);
+ int num_units = sizeof(unit_factors) / sizeof(unit_factors[0]);
 
 void showUnits() {
 displayUnits(unit_factors, num_units);
@@ -344,7 +342,8 @@ int unit_factors_find(const char* unit) {
     for (int i = 0; i < sizeof(unit_factors) / sizeof(Unit); ++i) {
         if (strcmp(unit_factors[i].unit, unit) == 0) {
             return i;  // Return the index of the found unit
-        }
+        } 
+
     }
     return -1;  // Return -1 if the unit is not found
 }
@@ -355,10 +354,18 @@ double convert_units(double value, const char* from_unit, const char* to_unit) {
     int to_idx = unit_factors_find(to_unit);
 
     if (from_idx != -1 && to_idx != -1) {
+        printf("From unit: %s, factor: %e\n", from_unit, unit_factors[from_idx].factor);
+printf("To unit: %s, factor: %e\n", to_unit, unit_factors[to_idx].factor);
+
         // Convert the value to the base unit (assuming base unit is meters or kilograms, etc.)
         double value_in_base = value * unit_factors[from_idx].factor;
         // Convert from the base unit to the target unit
         return value_in_base / unit_factors[to_idx].factor;
+
+        
+
+
+
     } else {
         // Invalid units
         printf("Error: Invalid unit\n");
@@ -380,7 +387,9 @@ void unitCommand(int argc, char* argv[]) {
     double result = convert_units(value, from_unit, to_unit);
 
     if (result != -1) {
-        printf("%f %s is equal to %f %s\n", value, from_unit, result, to_unit);
+      //  printf("%f %s is equal to %f %s\n", value, from_unit, result, to_unit);
+      printf("%f %s is equal to %e %s\n", value, from_unit, result, to_unit);
+
     }
 }
 
@@ -443,3 +452,7 @@ fflush(stdout);
 
 
 }
+
+
+//
+

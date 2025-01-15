@@ -1,4 +1,4 @@
-# Install script for directory: /Users/evan/SItool
+# Install script for directory: /Users/evan/Documents/GitHub/SItool
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/Users/evan/SItool/build/SItool")
+  file(INSTALL DESTINATION "/usr/local/bin" TYPE EXECUTABLE FILES "/Users/evan/Documents/GitHub/SItool/build/SItool")
   if(EXISTS "$ENV{DESTDIR}/usr/local/bin/SItool" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/SItool")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -58,7 +58,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/evan/SItool/build/install_local_manifest.txt"
+  file(WRITE "/Users/evan/Documents/GitHub/SItool/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -74,6 +74,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/evan/SItool/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/evan/Documents/GitHub/SItool/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

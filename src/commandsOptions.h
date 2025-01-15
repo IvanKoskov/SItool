@@ -62,9 +62,15 @@ extern Unit unit_factors[];  // Declaration of the array
 
 
 void unitCommand(int argc, char *argv[]);
+
 void helpCommand(void);
+
 double convert_units(double value, const char* from_unit, const char* to_unit); //universal unit converter 
-void showUnits(void);
+
+void showUnits(void); //display 
+
 void displayUnits(const Unit unit_factors[], int size);
+
+
 
 #endif // __COMMANDSOPTIONS_H__

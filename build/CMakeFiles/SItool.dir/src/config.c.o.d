@@ -1,4 +1,5 @@
-CMakeFiles/SItool.dir/src/config.c.o: /Users/evan/SItool/src/config.c \
+CMakeFiles/SItool.dir/src/config.c.o: \
+  /Users/evan/Documents/GitHub/SItool/src/config.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/ncurses.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/ncurses_dll.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdint.h \
@@ -55,4 +56,4 @@ CMakeFiles/SItool.dir/src/config.c.o: /Users/evan/SItool/src/config.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/secure/_string.h \
-  /Users/evan/SItool/src/config.h
+  /Users/evan/Documents/GitHub/SItool/src/config.h

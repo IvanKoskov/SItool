@@ -10,18 +10,18 @@ int main(int argc, char *argv[]) {
         return 1;
     } 
     
-    if (argc > 1 && strcmp(argv[1], "HELP") == 0) {
+    if (argc > 1 && strcmp(argv[1], "HELP") == 0) { //help
         helpCommand();
-    } else if (argc > 1 && strcmp(argv[1], "unit") == 0) {
+    } else if (argc > 1 && strcmp(argv[1], "unit") == 0) { //function to convert units
         unitCommand(argc, argv);
-    } else if (argc > 1 && strcmp(argv[1], "control") == 0) {
+    } else if (argc > 1 && strcmp(argv[1], "control") == 0) { //version + info
         displayConfig();
-    } else if (argc > 1 && strcmp(argv[1], "UNITS") == 0) {
+    } else if (argc > 1 && strcmp(argv[1], "UNITS") == 0) { //all available units
         showUnits();
     } 
     
      else {
-        printf("Unknown command. Use: unit <value> <from_unit> <to_unit> or similar arguments\n");
+        printf("Unknown command. Use: unit <value> <from_unit> <to_unit> or similar arguments\n"); //if no corresponding
         return 1;
     } 
 
