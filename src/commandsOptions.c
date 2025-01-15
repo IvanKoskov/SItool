@@ -453,6 +453,31 @@ fflush(stdout);
 
 }
 
+void equationBalance(int argc, char *argv[]){
 
-//
+   if (argc != 5) {
+        printf("Usage: %s \"H2 + O2 -> H2O\"\n", argv[0]);
+        return;
+    }
+    
+    char equation[256];
+    strcpy(equation, argv[1]);
+    
+    // Split the equation into reactants and products
+    char *reactants = strtok(equation, "->");
+    char *products = strtok(NULL, "->");
+
+    if (!reactants || !products) {
+        printf("Invalid equation format. Use 'Reactants -> Products'.\n");
+        return;
+    }
+
+    printf("Reactants: %s\n", reactants);
+    printf("Products: %s\n", products);
+
+    // TODO: Parse molecules, count atoms, set up a matrix, and solve it.
+
+    printf("Balancing is not implemented yet.\n");
+
+}
 

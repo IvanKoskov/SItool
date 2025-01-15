@@ -71,6 +71,6 @@ void showUnits(void); //display
 
 void displayUnits(const Unit unit_factors[], int size);
 
-
+void equationBalance(int argc, char *argv[]);
 
 #endif // __COMMANDSOPTIONS_H__
