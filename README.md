@@ -29,7 +29,3 @@ Check Validity of Input
 
 Input: A chemical equation or formula.
 Output: Validation of syntax (e.g., no invalid elements or mismatched parentheses).
-
-
-
-Made my Ivan Koskov in 2025 under mit license 
