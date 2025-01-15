@@ -1,5 +1,6 @@
-##Balance Chemical Equations
+### Balance Chemical Equations
 
+# ONLY SOME ARE DONE< RELEASE SOON
 Input: An unbalanced equation (e.g., H2 + O2 -> H2O).
 Output: A balanced equation (e.g., 2H2 + O2 -> 2H2O).
 Calculate Molar Mass
@@ -29,3 +30,7 @@ Check Validity of Input
 
 Input: A chemical equation or formula.
 Output: Validation of syntax (e.g., no invalid elements or mismatched parentheses).
+
+
+
+Made my Ivan Koskov in 2025 under mit license
