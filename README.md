@@ -32,4 +32,4 @@ Output: Validation of syntax (e.g., no invalid elements or mismatched parenthese
 
 
 
-Made my Ivan Koskov in 2025 under mit license
+Made my Ivan Koskov in 2025 under mit license 
